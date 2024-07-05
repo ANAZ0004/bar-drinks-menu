@@ -6,7 +6,7 @@ a {
 }
 
 #footer-div {
-    min-height: 250px;
+    min-height: 1rem;
     width: 100%;
     flex-grow:1;
 }

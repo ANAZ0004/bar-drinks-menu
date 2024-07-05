@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang='en'>
+    
+    <head>
+        <meta charset='UTF-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <title>Bar Menu</title>
+        <!-- Google Font | 'Mali' -->
+        <link rel='preconnect' href='https://fonts.googleapis.com'>
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+        <link href='https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap' rel='stylesheet'>
+        <!-- DaisyUI | Plugin for Tailwind CSS | Component Library -->
+        <link href='https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css' rel='stylesheet' type='text/css' />
+        <!-- Tailwind CSS -->
+        <script src='https://cdn.tailwindcss.com'></script>
+        <!-- Typical Normalise -->
+        <link rel='stylesheet' href='./assets/css/reset.css'/>
+        <!-- Custom Styles -->
+        <link rel='stylesheet' href='./assets/css/style.css'/>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                        // Pink colour palette | './assets/images/colour-palette.jpg'
+                        very_light_pink: '#f7e7e7',
+                        light_pink: '#f9dddc',
+                        pink: '#f5c3c4',
+                        dark_pink: '#edb3b2',
+                        very_dark_pink: '#db9d9e',
+                        white: '#ffffff', 
+                        off_white: '#f5f5f7', // Taken from Apple's main background
+                        },
+                    }
+                },
+            }
+        </script>
+    </head>
+    <body class='bg-very_light_pink flex flex-col'>
+        <header>
+            <h1 class='bg-light_pink py-4 text-4xl text-very_dark_pink text-center font-extrabold border-b-2 border-dark_pink'>
+                Christine's Birthday Bar
+            </h1>
+            <nav class='bg-very_light_pink p-4 text-very_dark_pink'>
+                <ul class='flex flex-wrap gap-4 justify-evenly text-xl *:grow *:bg-light_pink *:px-6 *py-2 *:text-center *:font-extrabold *:rounded-xl *:border-2 *:border-dark_pink'>
+                    <li>
+                        <a href='#cocktails'>
+                            Cocktails
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#spirits'>
+                            Spirits
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#wines'>
+                            Wines
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#beers'>
+                            Beers
+                        </a>
+                    </li>
+                    <li>
+                        <a href='#non-alcoholic'>
+                            Non-Alcoholic
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class='w-full flex flex-col gap-4 text-xl text-very_dark_pink text-center *:w-full *:bg-off_white *:border-y-2 *:border-dark_pink'>
+            <section id='cocktails'>
+                <h2 class='m-4'>
+                    🍸 Cocktails 🍹
+                </h2>
+                <ul class='my-4 mx-6 text-xs italic'>
+                    <li>
+                        Espresso Martini
+                    </li>
+                    <li>
+                        Fruit Tingle
+                    </li>
+                </ul>
+            </section>
+            <section id='spirits'>
+                <h2 class='m-4'>
+                    🥃 Spirits 🧊
+                </h2>
+                <ul class='my-4 mx-6 text-xs italic'>
+                    <li>
+                        Gordons Pink · Gin
+                    </li>
+                    <li>
+                        Malfy · Gin
+                    </li>
+                    <li>
+                        MGC · Gin
+                    </li>
+                    <li>
+                        —
+                    </li>
+                    <li>
+                        Baileys · Liqueur
+                    </li>
+                    <li>
+                        Baileys Chocolat · Liqueur
+                    </li>
+                    <li>
+                        Kahlua Coffee · Liqueur
+                    </li>
+                    <li>
+                        Malibu · Liqueur
+                    </li>
+                    <li>
+                        Mozart Chocolate Cream · Liqueur
+                    </li>
+                    <li>
+                        Pimms · Liqueur
+                    </li>
+                    <li>
+                        —
+                    </li>
+                    <li>
+                        Jose Cuervo · Tequila
+                    </li>
+                    <li>
+                        —
+                    </li>
+                    <li>
+                        Grey Goose · Vodka
+                    </li>
+                    <li>
+                        Smirnoff · Vodka
+                    </li>
+                </ul>
+            </section>
+            <section id='wines'>
+                <h2 class='m-4'>
+                    🍷 Wines 🥂
+                </h2>
+                <ul class='my-4 mx-6 text-xs italic'>
+                    <li>
+                        Ben Murray · Grenache · 2020 · Barossa Valley, SA
+                    </li>
+                    <li>
+                        —
+                    </li>
+                    <li>
+                        Wolf Blass Gold Label · Shiraz · 2011 · Barossa Valley, SA
+                    </li>
+                    <li>
+                        Penfolds Bin 2 · Shiraz-Mataro · 2018 · Barossa Valley, SA
+                    </li>
+                    <li>
+                        Dark Side of the Moon · Shiraz · 2021 · Clare Valley, SA
+                    </li>
+                    <li>
+                        Monichino · Shiraz · 1999 · Katunga, VIC
+                    </li>
+                    <li>
+                        Wolf Blass Grey Label · Shiraz · 2008 · McLaren Vale, SA
+                    </li>
+                    <li>
+                        Taylors Estate Label · Shiraz · 2021 · Limestone Coast, SA · Clare Valley, SA
+                    </li>
+                    <li>
+                        Primo Estate · Shiraz-Sangiovese · 1999 · Virginia, SA
+                    </li>
+                    <li>
+                        —
+                    </li>
+                    <li>
+                        Pepperjack · Cabernet Sauvignon · 2022 · Barossa Valley, SA
+                    </li>
+                    <li>
+                        Hardys Oomoo · Cabernet Sauvignon · 2006 · McLaren Vale, SA
+                    </li>
+                    <li>
+                        Penfolds · Cabernet Sauvignon · 2021 · Koonunga Hill, SA
+                    </li>
+                    <li>
+                        Wirra Wirra Church Block · Cabernet Sauvignon-Shiraz-Merlot · 2015 · McLaren Vale, SA
+                    </li>
+                    <li>
+                        Thomson · Cabernet Sauvignon · 1999 · Woolpunda, SA
+                    </li>
+                    <li>
+                        —
+                    </li>
+                    <li>
+                        Kaiora Bay · Pinot Noir · 2020 · Central Otago, NZ
+                    </li>
+                    <li>
+                        Stoneleigh Latitude · Pinot Noir · 2021 · Marlborough, NZ
+                    </li>
+                    <li>
+                        —
+                    </li>
+                    <li>
+                        Jacobs Creek · Chardonnay-Pinot Noir · 2024 · Barossa Valley, SA
+                    </li>
+                    <li>
+                        Chandon Brut · Chardonnay-Pinot Noir-Meunier · 2024 · Whitlands Plateau, VIC · Strathbogie Ranges, VIC · Yarra Valley, VIC
+                    </li>
+                    <li>
+                        Chandon Rose · Pinot Noir · 2024 · Whitlands Plateau, VIC · Strathbogie Ranges, VIC · Yarra Valley, VIC
+                    </li>
+                    <li>
+                        —
+                    </li>
+                    <li>
+                        Dowie Doole Estate · Merlot · 2021 · McLaren Vale, SA
+                    </li>
+                    <li>
+                        —
+                    </li>
+                    <li>
+                        Other wines available... <span class='not-italic'>😄</span>
+                    </li>
+                </ul>
+            </section>
+            <section id='beers'>
+                <h2 class='m-4'>
+                    🍺 Beers 🍻
+                </h2>
+                <ul class='my-4 mx-6 text-xs italic'>
+                    <li>
+                        Corona Extra
+                    </li>
+                    <li>
+                        Crown Lager
+                    </li>
+                </ul>
+            </section>
+            <section id='non-alcoholic'>
+                <h2 class='m-4'>
+                    🥤 Non-Alcoholic 🍹
+                </h2>
+                <ul class='my-4 mx-6 text-xs italic'>
+                    <li>
+                        Lemon Lime Bitters
+                    </li>
+                    <li>
+                        Lemonade
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <div id='footer-div'></div>
+        <footer class='bg-off_white p-4 border-t-2 border-dark_pink'>
+            <p class='w-full text-center text-very_dark_pink text-2xl font-bold'>Made with ❤ by Arsham</p>
+        </footer>
+    </body>
+
+</html>

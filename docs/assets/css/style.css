@@ -4,7 +4,6 @@
 }
 
 #footer-div {
-    min-height: 1rem;
     width: 100%;
     flex-grow:1;
 }
